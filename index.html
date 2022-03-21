@@ -22,7 +22,7 @@
 }
 
 body {
-  background-color: #353836;
+  background-image: url('img/coding.jpg');
   color: white;
   font-family: "Poppins", sans-serif;
   text-align: center;
@@ -33,14 +33,7 @@ header a {
   
 }
 
-header {
-  padding: 0 20px;
-  background-color: #1d1f1d;
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
-  
-}
+
 
 #brand {
   font-weight: bold;
@@ -154,6 +147,22 @@ color: #eaa6ff;
 }
 
 
+.background {
+  background: #380077;
+}
+
+.codingscreen {
+background-image: url('img/coding.jpg');
+border-radius: 20px;
+
+}
+
+.card {
+  border: #ff0000 ridge 5px;
+  box-shadow: 20px 10px black;
+}
+
+
 </style>
 
 
@@ -162,99 +171,154 @@ color: #eaa6ff;
         
 
 
-<header>
-    <div id="brand"><a href="Sakums">Rinalds Kristians Tulpe</a></div>
-    <nav>
-      <ul>
-        <li><a href="#">🏠 Sākums 🏠</a></li>
-        <li><a href="Prezentacijas/Android_Studio.html">💻 Prezentācija  💻</a></li>
-        <li><a href="Izmantotie_Avoti.html">🛠️ Izmantotie Avoti 🛠️</a></li>
-        <li><a href="Aplikacija.html">📱 Aplikācija 📱</a></li>
-      </ul>
-    </nav>
-    <div style="text-align: center; " id="hamburger-icon" onclick="toggleMobileMenu(this)">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-      <ul class="mobile-menu" style=" text-align: center; background-color: #1d1f1d;">
-          <li><a href="#">🏠 Sākums  🏠</a></li>
-          <li><a href="Prezentacijas/Android_Studio.html">💻 Prezentācija 💻</a></li>
-          <li><a href="Izmantotie_Avoti.html">🛠️ Izmantotie Avoti 🛠️</a></li>
-          <li><a href="Aplikacija.html">📱 Aplikācija 📱</a></li>
-      </ul>
-    </div>
+<header> 
 
-    <script>
-    
-    
-        function toggleMobileMenu(menu) {
-            menu.classList.toggle('open');
-        }
-        
-        
-        
-        </script>
+
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Sākums</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Prezentācija</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Izmantotie Avoti</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Aplikācija</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
     
   </header>
 
-<body>
-
+<body style="color: black;">
+ 
 
     <br>
 
-  
-    <img src="img/SOFTWARE_DEVELOPER.png" class="img-fluid" alt="SOFTWARE_DEVELOPER">
+  <div class="background container-sm shadow-ls p-3 mb-5 rounded">
 
-    <div class="container p-5 my-5 border" style="border-radius: 30px;">
-<img src="img/ANDROID_STUDIO.png" class="img-fluid" alt="ANDROID_STUDIO">
 
-        <br>
-        <p style="text-align: center;"> 
-            <br>
-            Izstrādātājs - Google
-            <br><br>
-            Android Studio ir android lietotņu izstrādes aplikācija
-            <br><br>
-            Android Studio pirmo reizi tika izlaista 2013. gada 16. maijā.
-            <br><br>
-            2019. gada 7. maijā Google aizstāja valodu Kotlin ar Javu, 
-            <br>
-            kā vēlamo valodu Android lietotņu izstrādei.
-        </p>
+
+<div class="codingscreen" width="100%">
+
+  <img src="img/SOFTWARE_DEVELOPER.png" class="img-fluid" alt="SOFTWARE_DEVELOPER" style="padding: 10px;">
+
+</div>
+ 
+
+   
+
+
+<div class="row">
+  <div class="col-sm-6" style="padding: 20px; ">
+    <div class="card" style="border-radius: 20px; background-color: #1300bb8c;">
+      <div class="card-body">
+        <img src="img/ANDROID_STUDIO.png" class="img-fluid" alt="ANDROID_STUDIO">
+        <div class="accordion" id="accordionPanelsStayOpenExample" style="padding: 20px;">
+          <div class="accordion-item bg-warning" >
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button style="background-color: #3700a3; color: aliceblue;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Pamatinformācija
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body" style="background-color: #fffb00;">
+                <p>Izstrādātājs - <strong>Microsoft</strong> 
+                  <br>
+                  <br>
+                  <strong>Visual Studio</strong> Code ir teksta redaktors, 
+                  <br>
+                  kas īpaši izstrādāts datorprogrammu pirmkoda rediģēšanai,
+                  <br>
+                  ko sauc arī par avota koda reģidētāju <strong>(Source-code Editor)</strong>
+                  <br><br>
+                  Avota koda redaktoriem ir īpašības, kas īpaši izstrādātas, 
+                  <br>
+                  lai vienkāršotu un paātrinātu avota koda ievadīšanu, piemēram, sintakses izcelšanas, atkāpes, 
+                  <br>
+                  automātiskās pabeigšanas un figūriekavu atbilstības funkcionalitāte. 
+                  <br>
+                  Šie redaktori nodrošina arī ērtu veidu, kā palaist kompilatoru, tulku, atkļūdotāju vai citu programmu, 
+                  <br>
+                  kas attiecas uz programmatūras izstrādes procesu. 
+                  <br>
+                  Tātad, lai gan daudzus teksta redaktorus, piemēram, Notepad, var izmantot avota koda rediģēšanai, 
+                  <br>
+                  bet ja tie neuzlabo, neautomatizē vai neatvieglo koda rediģēšanu, tie nav pirmkoda redaktori.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+  </div>
 
 
-
-      <div class="container p-5 my-5 border" style="border-radius: 30px;">
+  <div class="col-sm-6" style="padding: 20px;">
+    <div class="card" style="border-radius: 20px; background-color: #1300bb8c;">
+      <div class="card-body">
         <img src="img/VISUAL_STUDIO_CODE.png" class="img-fluid" alt="VISUAL_STUDIO_CODE">
-        <br>
-        
-
-
-        <p style="text-align: center;">
-            <br>Izstrādātājs - Microsoft
-            <br><br>
-            Visual Studio Code ir teksta redaktors, 
-            <br>
-            kas īpaši izstrādāts datorprogrammu pirmkoda rediģēšanai,
-            <br>
-            ko sauc arī par avota koda reģidētāju (Source-code Editor)
-            <br><br>
-            Avota koda redaktoriem ir īpašības, kas īpaši izstrādātas, 
-            <br>
-            lai vienkāršotu un paātrinātu avota koda ievadīšanu, piemēram, sintakses izcelšanas, atkāpes, 
-            <br>
-            automātiskās pabeigšanas un figūriekavu atbilstības funkcionalitāte. 
-            <br>
-            Šie redaktori nodrošina arī ērtu veidu, kā palaist kompilatoru, tulku, atkļūdotāju vai citu programmu, 
-            <br>
-            kas attiecas uz programmatūras izstrādes procesu. 
-            <br>
-            Tātad, lai gan daudzus teksta redaktorus, piemēram, Notepad, var izmantot avota koda rediģēšanai, 
-            <br>
-            bet ja tie neuzlabo, neautomatizē vai neatvieglo koda rediģēšanu, tie nav pirmkoda redaktori.
-        </p>
+        <div class="accordion" id="accordionPanelsStayOpenExample" style="padding: 20px;">
+          <div class="accordion-item bg-warning" >
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button style="background-color: #3700a3; color: aliceblue;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                Pamatinformācija
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body" style="background-color: #fffb00;">
+                <p style="text-align: center; color: black;"> 
+                  <br>
+                  Izstrādātājs - <strong>Google</strong>
+                  <br><br>
+                  <strong>Android Studio</strong> ir android lietotņu izstrādes aplikācija
+                  <br><br>
+                  Android Studio pirmo reizi tika izlaista 2013. gada 16. maijā.
+                  <br><br>
+                  2019. gada 7. maijā Google aizstāja valodu Kotlin ar Javu, 
+                  <br>
+                  kā vēlamo valodu Android lietotņu izstrādei.
+              </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+  </div>
+</div>
 
+
+
+      
+
+
+
+      
+      
+
+  
+
+
+
+
+
+</div>
   </body>
 </html>
