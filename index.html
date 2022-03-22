@@ -1,331 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sākums</title>
-    <link rel="icon" href="img/logo.png">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Personal Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="img/logo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header id="header">
+    <div class="container">
+
+      <h1><a href="index.html">Rinalds Kristians Tulpe</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+      <h2><span>Darbu krātuve</span></h2>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link active" href="#home">Sākums</a></li>
+          <li><a class="nav-link" href="#prez">Prezentācija</a></li>
+          <li><a class="nav-link" href="#avot">Izmantotie Resursi</a></li>
+          <li><a class="nav-link" href="#app">Aplikācija</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="social-links">
+        
+        <a href="https://www.facebook.com/rktulpe" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/rinalds_kristians_tulpe/?hl=en" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://open.spotify.com/artist/5AzIuxLP824fVFWNj7Aymc" class="linkedin"><i class="fa fa-spotify"></i></a>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= About Section ======= -->
+  <section id="avot" class="contact">
+
+    <!-- ======= About Me ======= -->
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Izmantotie Resursi</h2>
+        <p></p>
+      </div>
+
+      <div class="row mt-2">
 
-
-
-
-
-  
-<style>
-
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-image: url('img/coding.jpg');
-  color: white;
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-
-
-}
-
-
-body {
-            -webkit-transition: background-color 1s;
-            transition: background-color 1s;
-        }
-        html, body { min-height: 100%; }
-        body.loading {
-            background: #333 url('http://code.jquery.com/mobile/1.3.1/images/ajax-loader.gif') no-repeat 50% 50%;
-            -webkit-transition: background-color 0;
-            transition: background-color 0;
-            opacity: 0;
-            -webkit-transition: opacity 0;
-            transition: opacity 0;
-        }
-
-header a {
-  text-decoration: none;
-  
-}
-
-
-
-#brand {
-  font-weight: bold;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-}
-
-#brand a {
-  color: #ffffff;
-}
-
-ul {
-  list-style: none;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-ul a {
-  color: rgb(255, 255, 255);
-}
-
-ul li {
-  padding: 5px;
-  margin-left: 10px;
-}
-
-ul li:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
-}
-
-
-
-
-#hamburger-icon {
-  margin: auto 0;
-  display: none;
-  cursor: pointer;
-}
-
-#hamburger-icon div {
-  width: 35px;
-  height: 3px;
-  background-color: white;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
-.open .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-  transform: rotate(-45deg) translate(-6px, 6px);
-}
-
-.open .bar2 {
-  opacity: 0;
-}
-
-.open .bar3 {
-  -webkit-transform: rotate(45deg) translate(-6px, -8px);
-  transform: rotate(45deg) translate(-6px, -8px);
-}
-
-.open .mobile-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.mobile-menu {
-  display: none;
-  position: absolute;
-  top: 50px;
-  left: 0;
-  height: calc(100vh - 50px);
-  width: 100%;
-}
-
-.mobile-menu li {
-  margin-bottom: 10px;
-}
-
-@media only screen and (max-width: 600px) {
-  header nav {
-    display: none;
-  }
-
-  #hamburger-icon {
-    display: block;
-  }
-
-  .accordion {
-
-    padding: 2px
-  }
-
-.codingscreen {
-  visibility: hidden;
-}
-
-
-  }
-
-
-  @media only screen and (max-width: 1000px) {
-
-
-
-    .col-sm-6 {
-  width: 100%
-  
-}
-
-  }
-
-
-@import url('https://fonts.googleapis.com/css?family=Exo+2');
-
-
-.navigation:hover {
-color: red;
-
-}
-
-
-a:hover {
-    
-color: #eaa6ff;
-}
-
-
-.background {
-  background: #380077;
-}
-
-.codingscreen {
-background-image: url('img/coding.jpg');
-border-radius: 20px;
-
-}
-
-.card {
-  border: #ff0000 ridge 5px;
-  box-shadow: 20px 10px black;
-}
-
-a {color: #ffffff;}
-
-a:hover{
-  color: #D00011;
-}
-
-
-
-</style>
-
-
-  </head>
-  
         
 
-
-<header> 
-
-
-
-
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Sākums</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Prezentacijas/Android_Studio.html">Prezentācija</a>
-          </li>
-  
-          <li class="nav-item">
-            <a class="nav-link" href="Aplikacija.html">Aplikācija</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-    
-  </header>
-
-<body style="color: black;">
-v>
-
-    <br>
-
-  <div class="background container-sm shadow-ls p-3 mb-5 rounded">
-
-
-
-<div class="codingscreen" width="100%">
-
-  <img src="img/SOFTWARE_DEVELOPER.png" class="img-fluid" alt="SOFTWARE_DEVELOPER" style="padding: 10px;">
-
-</div>
- 
-
-   
-
-
-<div class="row">
-  <div class="col-sm-6" style="padding: 20px; ">
-    <div class="card" style="border-radius: 20px; background-color: #1300bb8c;">
-      <div class="card-body">
-        <img src="img/ANDROID_STUDIO.png" class="img-fluid" alt="ANDROID_STUDIO">
-        <div class="accordion" id="accordionPanelsStayOpenExample" style="padding: 5px;">
-          <div class="accordion-item bg-warning" >
-            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-              <button style="background-color: #3700a3; color: aliceblue;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                Pamatinformācija
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-              <div class="accordion-body" style="background-color: #fffb00;">
-                <p style="text-align: center; color: black;"> 
-                  <br>
-                  Izstrādātājs - <strong>Google</strong>
-                  <br><br>
-                  <strong>Android Studio</strong> ir android lietotņu izstrādes aplikācija
-                  <br><br>
-                  Android Studio pirmo reizi tika izlaista 2013. gada 16. maijā.
-                  <br><br>
-                  2019. gada 7. maijā Google aizstāja valodu Kotlin ar Javu, 
-                  <br>
-                  kā vēlamo valodu Android lietotņu izstrādei.
-              </p>
-
-
-
-              </div>
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch padding-5-top">
+          <div class="info-box">
+            <i class="bx bx-link" style="color: azure;"></i>
+            <h3>Programma</h3>
+            <div class="social-links">
+              <a href="https://developer.android.com/studio" class="twitter"><i class="fa fa-android"></i>  Android Studio</a>
             </div>
           </div>
         </div>
+
+
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch padding-5-top">
+          <div class="info-box">
+            <i class="bx bx-link" style="color: azure;"></i>
+            <h3>Programma</h3>
+            <div class="social-links">
+              <a href="https://code.visualstudio.com/download" class="twitter"><i class="fa fa-android"></i>  Visual Studio Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch padding-5-top">
+          <div class="info-box">
+            <i class="bx bx-link" style="color: azure;"></i>
+            <h3>Programma</h3>
+            <div class="social-links">
+              <a href="https://obsproject.com/" class="twitter"><i class="fa fa-desktop"></i>  OBS Studio</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch padding-5-top">
+          <div class="info-box">
+            <i class="bx bx-link" style="color: azure;"></i>
+            <h3>Programma</h3>
+            <div class="social-links">
+              <a href="https://github.com/Genymobile/scrcpy" class="twitter"><i class="fa fa-mobile"></i>  ScrCpy</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch padding-5-top">
+          <div class="info-box">
+            <i class="bx bx-link" style="color: azure;"></i>
+            <h3>Programma</h3>
+            <div class="social-links">
+              <a href="https://www.adobe.com/lv/products/photoshop.html?mv=search&mv=search&sdid=LZ32SYVR&ef_id=Cj0KCQiAybaRBhDtARIsAIEG3kk9CdpZIXhlCPHrOuYJEhYPQO2PUQFstl89XiCzxcY-H6dMGpLfsegaArNEEALw_wcB:G:s&s_kwcid=AL!3085!3!464637914873!e!!g!!photoshop!11126299107!109350514459" class="twitter"><i class="fa fa-picture-o"></i>  Photoshop</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch padding-5-top">
+          <div class="info-box">
+            <i class="bx bx-link" style="color: azure;"></i>
+            <h3>Programma</h3>
+            <div class="social-links">
+              <a href="https://commerce.adobe.com/store/segmentation?cli=adobe_com&co=US&pa=ilst_direct_individual&mv=other" class="twitter"><i class="fa fa-pencil"></i>  Ilustrator</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch padding-5-top">
+          <div class="info-box">
+            <i class="bx bx-link" style="color: azure;"></i>
+            <h3>Programma</h3>
+            <div class="social-links">
+              <a href="https://www.microsoft.com/en-us/microsoft-365/powerpoint" class="twitter"><i class="fa fa-file-powerpoint-o"></i>  PowerPoint</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch padding-5-top">
+          <div class="info-box">
+            <i class="bx bx-link" style="color: azure;"></i>
+            <h3>Programma</h3>
+            <div class="social-links">
+              <a href="https://www.google.com/chrome/?brand=BNSD&gclsrc=ds&gclsrc=ds" class="twitter"><i class="fa fa-chrome"></i>  Chrome</a>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch padding-5-top">
+          <div class="info-box">
+            <i class="bx bx-link" style="color: azure;"></i>
+            <h3>Tiešsaistes Materiāli</h3>
+            <div class="social-links">
+              <a href="https://stackoverflow.com/" class="twitter"><i class="fa fa-chrome"></i>  Stackoverflow</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch padding-5-top">
+          <div class="info-box">
+            <i class="bx bx-link" style="color: azure;"></i>
+            <h3>Tiešsaistes Materiāli</h3>
+            <div class="social-links">
+              <a href="https://www.w3schools.com//" class="twitter"><i class="fa fa-chrome"></i>  W3schools</a>
+            </div>
+          </div>
+        </div>
+        
+
+
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch padding-5-top">
+          <div class="info-box">
+            <i class="bx bx-link" style="color: azure;"></i>
+            <h3>Android Studio Papildinājums</h3>
+            <div class="social-links">
+              <a href="https://gradle.org/releases/" class="twitter"><i class="fa fa-plus"></i>  Gradle</a>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch padding-5-top">
+          <div class="info-box">
+            <i class="bx bx-link" style="color: azure;"></i>
+            <h3>Tiešsaistes Serveris</h3>
+            <div class="social-links">
+              <a href="https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage" class="twitter"><i class="fa fa-hdd-o"></i>  OneDrive</a>
+            </div>
+          </div>
+        </div>
+        
+
+
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch padding-5-top">
+          <div class="info-box">
+            <i class="bx bx-link" style="color: azure;"></i>
+            <h3>Wikipedia</h3>
+            <div class="social-links">
+              <a href="https://en.wikipedia.org/wiki/Android_Studio" class="twitter"><i class="fa fa-wikipedia-w"></i>  Android Studio</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch padding-5-top">
+          <div class="info-box">
+            <i class="bx bx-link" style="color: azure;"></i>
+            <h3>Wikipedia</h3>
+            <div class="social-links">
+              <a href=" https://en.wikipedia.org/wiki/Visual_Studio_Code" class="twitter"><i class="fa fa-wikipedia-w"></i>  Visual Studio Code</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch padding-5-top">
+          <div class="info-box">
+            <i class="bx bx-link" style="color: azure;"></i>
+            <h3>Datubāze</h3>
+            <div class="social-links">
+              <a href="https://firebase.google.com/" class="twitter"><i class="fa fa-hdd-o"></i>  Firebase</a>
+            </div>
+          </div>
+        </div>
+       
+
+
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch padding-5-top">
+          <div class="info-box">
+            <i class="bx bx-link" style="color: azure;"></i>
+            <h3>Tiešsaistes Resursu Krātuve</h3>
+            <div class="social-links">
+              <a href="https://github.com/Rktulpe/Datorika-Web_Page" class="twitter"><i class="bi bi-github"></i>  Github</a>
+            </div>
+          </div>
+        </div>
+
+
+        
+        
       </div>
+
+   
+  </section><!-- End About Section -->
+
+  
+
+  <!-- ======= Services Section ======= -->
+  <section id="prez" class="services">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Prezentācija</h2>
+        <p>Android Studio Instrukcija</p>
+        <h6 style="font-style: italic;">Kā izveidot parastu aplikāciju (Prezentācija + Video)</h6>
+      </div>
+
+      <div class="row">
+
+ 
+           
+    
+            <iframe style=" border-radius: 30px; border: #ffffff solid 1px;" src="https://onedrive.live.com/embed?cid=53AF7C0710654701&amp;resid=53AF7C0710654701%21921&amp;authkey=ACViPsmHBRyMq4I&amp;em=2&amp;wdAr=1.7777777777777777" width="100%" height="576px" frameborder="0">Šis ir iegults <a target="_blank" href="https://office.com">Microsoft Office</a> dokuments, kura darbību nodrošina programma <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+        
+      </div>
+
     </div>
-  </div>
+  </section><!-- End Services Section -->
+
+  <!-- ======= Portfolio Section ======= -->
+  <section id="home" class="portfolio">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Sākums</h2>
+        <p>Programmas</p>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card" style="background-color: rgba(255, 255, 255, 0.08);">
+            <div class="card-body">
+              <h2 class="card-title"><strong>Android Studio</strong></h2>
+
+<p>
+              Izstrādātājs - <strong>Google</strong>
+              <br><br>
+              <strong>Android Studio</strong> ir android lietotņu izstrādes aplikācija
+              <br><br>
+              Android Studio pirmo reizi tika izlaista 2013. gada 16. maijā.
+              <br><br>
+              2019. gada 7. maijā Google aizstāja valodu Kotlin ar Javu, 
+              <br>
+              kā vēlamo valodu Android lietotņu izstrādei.
+</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card" style="background-color: rgba(255, 255, 255, 0.08);">
+            <div class="card-body">
+              <h2 class="card-title"><strong>Visual Studio Code</strong></h2>
 
 
-  <div class="col-sm-6" style="padding: 20px;">
-    <div class="card" style="border-radius: 20px; background-color: #1300bb8c;">
-      <div class="card-body">
-        <img src="img/VISUAL_STUDIO_CODE.png" class="img-fluid" alt="VISUAL_STUDIO_CODE">
-        <div class="accordion" id="accordionPanelsStayOpenExample" style="padding: 5px;">
-          <div class="accordion-item bg-warning" >
-            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-              <button style="background-color: #3700a3; color: aliceblue;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
-                Pamatinformācija
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-              <div class="accordion-body" style="background-color: #fffb00;">
-     
+
               <p>Izstrādātājs - <strong>Microsoft</strong> 
                 <br>
                 <br>
@@ -348,60 +340,77 @@ v>
                 Tātad, lai gan daudzus teksta redaktorus, piemēram, Notepad, var izmantot avota koda rediģēšanai, 
                 <br>
                 bet ja tie neuzlabo, neautomatizē vai neatvieglo koda rediģēšanu, tie nav pirmkoda redaktori.</p>
-              </div>
+
+
             </div>
           </div>
         </div>
       </div>
+
+      </div>
+
     </div>
+  </section><!-- End Portfolio Section -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="app" class="contact">
+    <div class="about-me container">
+
+      <div class="section-title">
+        <h2>Aplikacija</h2>
+        
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right">
+          <img src="img/frame.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3>Android Studio Instrukcija</h3>
+         <br>
+         <br>
+          
+          <div class="row">
+            <div class="col-lg-6">
+              <ul>
+                
+                <a href="https://firebasestorage.googleapis.com/v0/b/timegoes-441ae.appspot.com/o/app-release.apk?alt=media&token=52b70767-0a53-4d24-83ee-bc5bb47945c2" download>
+
+                  <img src="img/download.png" class="img-fluid download" alt="Lejuplādēt" width="300px">
+                  
+                  </a>
+              </ul>
+            </div>
+           
+          </div>
+      
+        </div>
+      </div>
+
+    </div><!-- End About Me -->
+    </div>
+  </section><!-- End Contact Section -->
+
+  <div class="credits">
+    <!-- All the links in the footer should remain intact. -->
+    <!-- You can delete the links only if you purchased the pro version. -->
+    <!-- Licensing information: https://bootstrapmade.com/license/ -->
+    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
+    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
   </div>
-</div>
 
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
 
-<br>
-<br>
-      
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
+</body>
 
-<div class="codingscreen" width="100%">
-
-  <img src="img/IZMANTOTIE_AVOTI.png" class="img-fluid" alt="SOFTWARE_DEVELOPER" style="padding: 10px;">
-
-</div>
- 
-
-<div class="" style="border-radius: 30px; padding: 20px;">
-    <p style="text-align: center;"><a href="https://developer.android.com/studio" style=" text-align: center;">Android Studio Download</a></p>
-    <p style="text-align: center;"><a href="https://obsproject.com/" style="text-align: center;">OBS Studio Download (Ekrāna Ierakstītājs)</a></p>
-    <p style="text-align: center;"><a href="https://github.com/Genymobile/scrcpy" style="text-align: center;">ScrCpy (Telefona ekrāns datorā)</a></p>
-    <p style="text-align: center;"><a href="https://gradle.org/releases/" style="text-align: center;">Gradle Download</a></p>
-    <p style="text-align: center;"><a href="https://commerce.adobe.com/store/segmentation?cli=adobe_com&co=US&pa=ilst_direct_individual&mv=other" style="text-align: center;">Adobe Ilustrator Download</a></p>
-    <p style="text-align: center;"><a href="https://www.000webhost.com/" style="text-align: center;">Web Hosting (000webhost.com)</a></p>     
-    <p style="text-align: center;"><a href="https://stackoverflow.com/" style="text-align: center;">Stackowerflow</a></p>       
-    <p style="text-align: center;"><a href="https://www.w3schools.com//" style="text-align: center;">w3schools</a></p>               
-    <p style="text-align: center;"><a href=" https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage" style="text-align: center;">OneDrive</a></p>               
-    <p style="text-align: center;"><a href="https://www.adobe.com/lv/products/photoshop.html?mv=search&mv=search&sdid=LZ32SYVR&ef_id=Cj0KCQiAybaRBhDtARIsAIEG3kk9CdpZIXhlCPHrOuYJEhYPQO2PUQFstl89XiCzxcY-H6dMGpLfsegaArNEEALw_wcB:G:s&s_kwcid=AL!3085!3!464637914873!e!!g!!photoshop!11126299107!109350514459" style="text-align: center;">Adobe Photoshop </a></p>         
-    <p style="text-align: center;"><a href="https://www.microsoft.com/en-us/microsoft-365/powerpoint" style="text-align: center;">PowerPoint </a></p>                 
-    <p style="text-align: center;"><a href="https://en.wikipedia.org/wiki/Android_Studio" style="text-align: center;">Android Studio - Wikipedia </a></p>                      
-    <p style="text-align: center;"><a href="https://en.wikipedia.org/wiki/Visual_Studio_Code" style="text-align: center;">Visual Studio Code - Wikipedia</a></p>                    
-    <p style="text-align: center;"><a href="https://www.qr-code-generator.com/free-generator/?utm_source=google_c&utm_medium=cpc&utm_campaign=en_top_kw&utm_content=qr_generator_exact&utm_term=qr%20code%20generator_e" style="text-align: center;">OR Code Generator</a></p>         
-    <p style="text-align: center;"><a href="https://firebase.google.com/" style="text-align: center;">Firebase</a></p>
-    <p style="text-align: center;"><a href="https://github.com/Rktulpe/Datorika-Web_Page" style="text-align: center;">Github</a></p>
-               
-             
-             
-             
-    </div>
-      
-      
-
-  
-
-
-
-   
-  
-</div>
-
-  </body>
 </html>
