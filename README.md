@@ -1,2 +1,2 @@
 # **For School Project**
-*Android Studio Instruction* - [webpage](https://rktulpe.github.io/datorika-web_page)
+*Android Studio Instruction* - [Webpage](https://rktulpe.github.io/Datorika-Web_Page/index.html#home)
